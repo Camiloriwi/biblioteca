@@ -24,10 +24,10 @@ export class ClientsController {
     return await this.service.create(body);
   }
 
-  @Post('register')
-  async register(@Body() body) {
-    return await this.service.create(body);
-  }
+  // @Post('register')
+  // async register(@Body() body) {
+  //   return await this.service.create(body);
+  // }
 
   @Post('login')
   async login(@Body() body) {

@@ -7,7 +7,7 @@ import { Model } from 'mongoose';
 export class BooksService {
   constructor(@InjectModel(Books.name) private BookModel: Model<Books>) {}
 
-  async finAll() {
+  async findAll() {
     return await this.BookModel.find().exec();
   }
 

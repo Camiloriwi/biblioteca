@@ -12,15 +12,14 @@ import {
 
 @Controller('books')
 export class BooksController {
-  // eslint-disable-next-line no-unused-vars
   constructor(private readonly service: BooksService) {}
 
-  @Get('all')
+  @Get('/melo')
   async getBooks() {
-    return this.service.finAll();
+    return this.service.findAll();
   }
 
-  @Post('new')
+  @Post('newBook')
   async create(@Body() body) {
     return await this.service.create(body);
   }

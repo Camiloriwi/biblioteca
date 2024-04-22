@@ -15,15 +15,18 @@ export class ClientsService {
   }
 
   async encryptPassword(password: string): Promise<string> {
-    const saltOrRounds = 10;
-    const hash = await bcrypt.hash(password, saltOrRounds);
+    if (!password) {
+      throw new Error('Password is required');
+    }
+    const hash = await bcrypt.hash(password, 10);
     return hash;
   }
+  
 
   async create(@Body() body): Promise<Clients> {
     body.password = await this.encryptPassword(body.password);
-    const newStudent = new this.clientModel(body);
-    return await newStudent.save();
+    const newClient = new this.clientModel(body);
+    return await newClient.save();
   }
 
   async findByEmail(email: string): Promise<Clients> {
