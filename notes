@@ -1,0 +1,91 @@
+estudiar o investigar sobre angular Nextjs o reactjs 
+profundizar en postgresql express mongodb javascript  typescript  
+
+comando para generar un CRUD    $ nest g resource
+
+Generate a module (nest g mo)
+Generate a controller (nest g co) 
+Generate a service (nest g s) 
+
+
+## modulos en NestJS
+
+Los módulos en NestJS son una parte esencial para organizar tu aplicación de manera eficiente y escalable1. Aquí te dejo algunos puntos clave sobre los módulos en NestJS:
+
+Clase Anotada: Un módulo es una clase anotada con un decorador @Module()23.
+Metadatos: El decorador @Module() proporciona metadatos que NestJS utiliza para organizar la estructura de la aplicación23.
+Módulo Raíz: Cada aplicación tiene al menos un módulo, un módulo raíz. El módulo raíz es el punto de partida que NestJS utiliza para construir el gráfico de la aplicación23.
+Organización: Los módulos son fuertemente recomendados como una forma efectiva de organizar tus componentos2.
+Propiedades del Módulo: El decorador @Module() toma un solo objeto cuyas propiedades describen el módulo: providers, controllers, imports, exports23.
+
+
+
+
+los dtos de responses y request no siempre tienen que omitir o  recibir datos
+
+usar paginacion  para performans 
+render lazy 
+S,S,R
+
+
+investigar como practico buenas practicas  de performance
+
+Los códigos de estado HTTP se agrupan en cinco clases:
+
+    Respuestas informativas (100–199)
+    Respuestas satisfactorias (200–299)
+    Redirecciones (300–399)
+    Errores de los clientes (400–499)
+    Errores de los servidores (500–599)1
+
+algunos ejemplos de códigos de estado HTTP en cada clase:
+
+    Respuestas informativas:
+        100 Continue
+        101 Switching Protocol
+        102 Processing
+        103 Early Hints
+
+    Respuestas satisfactorias:
+        200 OK
+        201 Created
+        202 Accepted
+        203 Non-Authoritative Information
+        204 No Content
+        205 Reset Content
+        206 Partial Content
+        207 Multi-Status
+
+    Redirecciones:
+        300 Multiple Choices
+        301 Moved Permanently
+        302 Found
+        303 See Other
+        304 Not Modified
+        307 Temporary Redirect
+        308 Permanent Redirect
+
+    Errores de los clientes:
+        400 Bad Request
+        401 Unauthorized
+        402 Payment Required
+        403 Forbidden
+        404 Not Found
+        405 Method Not Allowed
+        406 Not Acceptable
+        407 Proxy Authentication Required
+        408 Request Timeout
+        409 Conflict
+        410 Gone
+
+    Errores de los servidores:
+        500 Internal Server Error
+        501 Not Implemented
+        502 Bad Gateway
+        503 Service Unavailable
+        504 Gateway Timeout
+        505 HTTP Version Not Supported
+
+
+
+
